@@ -1,0 +1,79 @@
+// Заголовки, общие БЄМ блоки и проче...
+.button {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  border: 1px solid #161513;
+  padding: 9px 26px;
+  min-width: 126px;
+  transition-duration: 0.2s;
+
+  &_active {
+    background-color: #161513;
+    color: white;
+  }
+
+  &_large {
+    width: 100%;
+    padding: 16px 26px;
+  }
+
+  &:hover {
+    background-color: #161513;
+    color: white;
+  }
+
+  &_fz-23 {
+    font-size: rem(23);
+  }
+}
+
+.header-item {
+  *:last-child {
+    margin: 0px 0px 60px 0px;
+  }
+
+  // .header-item__title
+
+  &__title {
+    font-weight: 400;
+    @include adaptiveValue("font-size", 45, 35, 1023.98, 479.98, 1);
+    line-height: 124%;
+    text-align: center;
+    letter-spacing: 1.44px;
+    margin: 0px 0px 9px 0px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      bottom: 78px;
+      left: 50%;
+      background: url(@img/main/orange.svg) top no-repeat;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  // .header-item__subline
+
+  &__subline {
+    font-weight: 400;
+    @include adaptiveValue("font-size", 18, 16, 1023.98, 479.98, 1);
+    line-height: 178%;
+    text-align: center;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+  }
+}
+
+
+.marquee {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
