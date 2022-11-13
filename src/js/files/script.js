@@ -181,52 +181,52 @@ for (let i = 0; i < marqueeElementsDisplayed; i++) {
 //     return [amountLetters, answer];
 // }
 
-const btnMore = document.querySelector(".portfolio__more");
-const moreContent = document.querySelector(".portfolio__text");
-btnMore.addEventListener("click", function (e) {
-  if (moreContent.style.overflow === "hidden") {
-    moreContent.style.overflow = "visible";
-  } else if (moreContent.style.overflow === "visible") {
-    moreContent.style.overflow = "hidden";
-  }
-});
+// const btnMore = document.querySelector(".portfolio__more");
+// const moreContent = document.querySelector(".portfolio__text");
+// btnMore.addEventListener("click", function (e) {
+//   if (moreContent.style.overflow === "hidden") {
+//     moreContent.style.overflow = "visible";
+//   } else if (moreContent.style.overflow === "visible") {
+//     moreContent.style.overflow = "hidden";
+//   }
+// });
 
 
-const quant = document.querySelector('.quintette');
-const subscribeInput = document.querySelector('.input');
-const inputLimit = subscribeInput.getAttribute('maxlength')
+// const quant = document.querySelector('.quintette');
+// const subscribeInput = document.querySelector('.input');
+// const inputLimit = subscribeInput.getAttribute('maxlength')
 
-document.addEventListener("click", function (e) {
-  if (e.target.closest('.button_fz-23')) {
-    subscribeInput.classList.toggle('input_active')
-  }
-  if (!e.target.closest('.subscribe__form')) {
-    subscribeInput.classList.remove('input_active')
-  }
-});
+// document.addEventListener("click", function (e) {
+//   if (e.target.closest('.button_fz-23')) {
+//     subscribeInput.classList.toggle('input_active')
+//   }
+//   if (!e.target.closest('.subscribe__form')) {
+//     subscribeInput.classList.remove('input_active')
+//   }
+// });
  
-document.addEventListener("keydown", function (e) {
-  if (e.code == 'Escape') {
-    subscribeInput.classList.remove('input_active')
-  }
-});
+// document.addEventListener("keydown", function (e) {
+//   if (e.code == 'Escape') {
+//     subscribeInput.classList.remove('input_active')
+//   }
+// });
 
 
 
 
-subscribeInput.addEventListener("keyup", function (e) {
-  const result = inputLimit - subscribeInput.value.length
-  quant.innerText = result
-});
+// subscribeInput.addEventListener("keyup", function (e) {
+//   const result = inputLimit - subscribeInput.value.length
+//   quant.innerText = result
+// });
 
 
-const windowScreen = window.pageXOffset
-console.log(windowScreen);
+// const windowScreen = window.pageXOffset
+// console.log(windowScreen);
 
 
 
-const underline = document.querySelector('#underline');
-const nav = document.querySelector('nav');
+// const underline = document.querySelector('#underline');
+// const nav = document.querySelector('nav');
 
 
 // nav.addEventListener("click", function (e) {

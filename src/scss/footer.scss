@@ -27,7 +27,6 @@
 }
 
 .input {
-    visibility: hidden;
     background-color: transparent;
     border: 2px solid #161513;
     min-width: 354px;
@@ -37,9 +36,6 @@
 
     &::placeholder {
         color: black;
-    }
-    &_active{
-        visibility: visible;
     }
 }
 
